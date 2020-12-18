@@ -60,6 +60,8 @@ export default {
         rating: this.chosenRating,
       });
 
+      fetch('https://vue-http-demo-a6636-default-rtdb.europe-west1.firebasedatabase.app/');
+
       this.enteredName = '';
       this.chosenRating = null;
     },
