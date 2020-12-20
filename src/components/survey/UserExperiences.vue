@@ -7,8 +7,9 @@
           >Load Submitted Experiences</base-button
         >
       </div>
-      <h2 v-if="isLoading">Loading</h2>
-      <ul v-if="!isLoading">
+      <h2 v-if="isLoading">Loading...</h2>
+      <p v-else-if="!isLoading && (!results || results.length === 0)">No Stored Experincies Found. Start by adding some experinces first</p>
+      <ul v-else-if="!isLoading && results && results.length > 0">
         <survey-result
           v-for="result in results"
           :key="result.id"
