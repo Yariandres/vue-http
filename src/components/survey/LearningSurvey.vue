@@ -75,7 +75,7 @@ export default {
       // });
       this.error = null;
       fetch(
-        'https://vue-http-demo-a6636-default-rtdb.europe-west1.firebasedatabase.app/surveys',
+        'https://vue-http-demo-a6636-default-rtdb.europe-west1.firebasedatabase.app/surveys.json',
         {
           method: 'POST',
           headers: {
